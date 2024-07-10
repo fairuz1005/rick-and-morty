@@ -2,8 +2,8 @@ import React from 'react';
 import { MockedProvider } from '@apollo/client/testing';
 import { render, screen, waitFor } from '@testing-library/react';
 import { RecoilRoot } from 'recoil';
-import CharacterDetail from './[id]';
-import { GET_CHARACTER } from '../../apollo/queries/characterQueries';
+import CharacterDetail from '../pages/character/[id]';
+import { GET_CHARACTER } from '../apollo/queries/characterQueries';
 import { useRouter } from 'next/router';
 
 jest.mock('next/router', () => ({
